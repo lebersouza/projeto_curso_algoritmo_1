@@ -1,0 +1,17 @@
+var nome, nota01, nota02, passou;
+
+passou = false;
+
+nome = prompt("Digite o nome do aluno:")
+nota01 = prompt("Digite a nota 01 do aluno:", [7,5])
+nota02 = prompt("Digite a nota 02 do aluno:", [7,5])
+
+media = (parseInt(nota01) + parseInt(nota02)) / 2;
+
+if (media >= 5)
+    passou = true;
+
+if (passou && (media >= 7 && media <= 9))
+    alert ("Aprovado!" + nome)
+else 
+    alert ("Reprovado!" + nome)
